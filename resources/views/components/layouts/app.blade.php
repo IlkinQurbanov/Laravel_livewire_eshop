@@ -136,7 +136,7 @@
 									<a  wire:navigate class="nav-link" href="{{route('category')}}">Category</a>
 								</li>
 								<li class="nav-item">
-									<a wire:navigete class="nav-link" href="{{route('product')}}">Product</a>
+									<a wire:navigate class="nav-link" href="{{route('product')}}">Product</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#">Payment</a>

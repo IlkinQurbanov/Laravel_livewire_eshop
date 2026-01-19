@@ -1,21 +1,21 @@
-(() => {
-    'use strict'
+// (() => {
+//     'use strict'
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
+//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//     const forms = document.querySelectorAll('.needs-validation')
 
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
+//     // Loop over them and prevent submission
+//     Array.from(forms).forEach(form => {
+//         form.addEventListener('submit', event => {
+//             if (!form.checkValidity()) {
+//                 event.preventDefault()
+//                 event.stopPropagation()
+//             }
 
-            form.classList.add('was-validated')
-        }, false)
-    })
-})();
+//             form.classList.add('was-validated')
+//         }, false)
+//     })
+// })();
 
 window.addEventListener('scroll', function () {
     document.getElementById('header-nav').classList.toggle('headernav-scroll', window.scrollY > 135);
@@ -29,22 +29,22 @@ document.addEventListener('livewire:navigated', () => {
     });
 
 
-const offcanvasCartEl = document.getElementById('offcanvasCart');
-const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
+// const offcanvasCartEl = document.getElementById('offcanvasCart');
+// const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
 
-document.getElementById('cart-open').addEventListener('click', (e) => {
-    e.preventDefault();
-    offcanvasCart.toggle();
-});
+// document.getElementById('cart-open').addEventListener('click', (e) => {
+//     e.preventDefault();
+//     offcanvasCart.toggle();
+// });
 
-document.querySelectorAll('.closecart').forEach(item => {
-    item.addEventListener('click', (e) => {
-        e.preventDefault();
-        offcanvasCart.hide();
-        let href = item.dataset.href;
-        document.getElementById(href).scrollIntoView();
-    });
-});
+// document.querySelectorAll('.closecart').forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         offcanvasCart.hide();
+//         let href = item.dataset.href;
+//         document.getElementById(href).scrollIntoView();
+//     });
+// });
 
 
 $(document).ready(function () {
